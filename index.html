@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesha Dharmesh Shah - Applied A.I. Solutions Developer</title>
+    <style>
+        :root { --bg:#0a0e17; --card:#1a2332; --text:#e2e8f0; --primary:#3b82f6; --accent:#64748b; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Segoe UI',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+        nav { position:fixed; top:0; left:0; right:0; background:rgba(10,14,23,0.98); backdrop-filter:blur(12px); z-index:1000; padding:1rem 0; border-bottom:1px solid #1e293b; }
+        .nav-container { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 2rem; }
+        .nav-brand { font-size:2rem; font-weight:bold; color:var(--primary); }
+        .nav-links { display:flex; gap:2.3rem; list-style:none; }
+        .nav-links a { color:var(--text); text-decoration:none; font-weight:500; transition:color .3s; }
+        .nav-links a:hover { color:var(--primary); }
+        .nav-container { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 2rem; }
+        .container { max-width:1100px; margin:0 auto; padding:0 2rem; }
+        section { padding:100px 0; }
+        h1 { font-size:3.8rem; color:white; margin-bottom:0.3rem; }
+        h2 { font-size:2.7rem; text-align:center; color:white; margin-bottom:3rem; position:relative; }
+        h2::after { content:''; position:absolute; bottom:-15px; left:50%; transform:translateX(-50%); width:100px; height:5px; background:var(--primary); border-radius:3px; }
+
+        .hero-section { min-height:100vh; display:flex; align-items:center; padding-top:80px; }
+        .header-grid { display:grid; grid-template-columns: auto 1fr; gap:2rem; align-items:center; }
+        .header-photo img { width:180px; height:180px; border-radius:50%; object-fit:cover; border:6px solid var(--primary); box-shadow:0 0 40px rgba(59,130,246,0.5); }
+        .header-contact { font-size:1.1rem; color:#94a3b8; line-height:1.7; margin:1rem 0; }
+        .header-contact a { color:#94a3b8; text-decoration:none; }
+        .header-bio { font-size:1.3rem; line-height:1.9; opacity:0.95; margin:2rem 0; }
+
+        .skills-columns { display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin:2rem 0; }
+        .skill-col ul { list-style:disc; margin-left:1.5rem; line-height:2; }
+
+        .resume-embed { width:100%; height:1350px; border-radius:15px; overflow:hidden; box-shadow:0 30px 70px rgba(0,0,0,0.6); margin-bottom:2rem; }
+        .resume-embed iframe { width:100%; height:100%; border:none; }
+
+        .btn-github { display:inline-flex; align-items:center; gap:1rem; background:var(--primary); color:white; padding:1.4rem 3.5rem; border-radius:50px; text-decoration:none; font-size:1.5rem; font-weight:bold; }
+        .btn-github:hover { background:#2563eb; transform:translateY(-6px); box-shadow:0 20px 40px rgba(59,130,246,0.4); }
+
+        .education-item { background:var(--card); padding:2.2rem; border-radius:15px; margin-bottom:2rem; border-left:6px solid var(--primary); }
+        .edu-date { color:var(--primary); font-weight:bold; font-size:1.25rem; margin-bottom:0.8rem; }
+        .edu-title { font-size:1.55rem; color:white; margin-bottom:0.5rem; }
+        .edu-school { font-weight:600; color:#cbd5e1; }
+
+        .certificates-display { display:grid; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); gap:2rem; margin-top:2rem; }
+        .cert-image { text-align:center; }
+        .cert-image img, .cert-image iframe { 
+            width:100%; max-width:800px; height:auto; border:3px solid var(--primary); border-radius:12px; 
+            box-shadow:0 15px 40px rgba(0,0,0,0.6); background:white;
+        }
+        .cert-image p { margin-top:0.8rem; font-size:1.1rem; font-weight:600; color:var(--primary); }
+
+        .contact-info { max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:1.8rem; }
+        .contact-item { background:var(--card); padding:1.8rem 2.5rem; border-radius:12px; font-size:1.2rem; display:flex; align-items:center; gap:1.2rem; }
+        .contact-item a { color:var(--primary); text-decoration:none; }
+        footer { text-align:center; padding:4rem; color:var(--accent); }
+
+        @media (max-width:768px) {
+            .header-grid, .skills-columns { grid-template-columns:1fr; text-align:center; }
+            .header-photo img { margin:0 auto; }
+            h1 { font-size:3rem; }
+            .certificates-display { grid-template-columns:1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">KDS</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="header-grid">
+                    <div class="header-photo">
+                        <img src="photo.jpg" alt="Kesha Dharmesh Shah">
+                    </div>
+                    <div class="header-info">
+                        <h1>Kesha Dharmesh Shah</h1>
+                        <div class="header-contact">
+                            37 Eastbourne Drive, Brampton, ON L6T 3M1<br>
+                            Cell: <a href="tel:+14168977663">+1 (416) 897-7663</a><br>
+                            <a href="mailto:101586057@georgebrown.ca">101586057@georgebrown.ca</a><br>
+                            <a href="https://linkedin.com/in/kesha-dharmesh-shah-9681aa353" target="_blank">linkedin.com/in/kesha-dharmesh-shah-9681aa353</a>
+                        </div>
+                        <p class="header-bio">
+                            Applied A.I. Solutions Development student with real-world experience testing cloud-based banking applications. 
+                            Skilled in AWS, Azure, GCP, Python ML, Hadoop, Terraform, Ansible, and automation. 
+                            Seeking Cloud AI Developer or Google Cloud roles.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 style="text-align:left; margin-top:4rem;">Technical Skills</h2>
+                <div class="skills-columns">
+                    <div class="skill-col">
+                        <ul>
+                            <li>Cloud Platforms (AWS, Azure, GCP)</li>
+                            <li>Web Application Testing</li>
+                            <li>Data Manipulation</li>
+                            <li>Python (Data Analysis, Machine Learning, Web Scraping)</li>
+                            <li>Data Quality Assurance</li>
+                        </ul>
+                    </div>
+                    <div class="skill-col">
+                        <ul>
+                            <li>Hadoop</li>
+                            <li>Information Security Protocols</li>
+                            <li>Project Management</li>
+                            <li>Network Development and Testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume">
+            <div class="container">
+                <h2>My Resume</h2>
+                <div class="resume-embed">
+                    <iframe src="resume.pdf" allowfullscreen></iframe>
+                </div>
+                <div style="text-align:center; margin-top:1rem;">
+                    <a href="resume.pdf" download class="btn-github">Download Resume PDF</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="container">
+                <h2>Projects & Code Samples</h2>
+                <div style="text-align:center; padding:4rem 0;">
+                    <p style="font-size:1.3rem; margin-bottom:2.5rem; opacity:0.9;">
+                        All my projects and source code are publicly available on GitHub
+                    </p>
+                    <a href="https://github.com/kesha0501" target="_blank" class="btn-github">
+                        View GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION + CERTIFICATES -->
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="edu-date">August 2026 (Pursuing)</div>
+                    <div class="edu-title">Applied AI Solutions and Development, Postgraduate Certificate</div>
+                    <div class="edu-school">George Brown College, Toronto, Ontario</div>
+                </div>
+                <div class="education-item">
+                    <div class="edu-date">August 2025 (Completed)</div>
+                    <div class="edu-title">Cloud Computing, Postgraduate Certificate</div>
+                    <div class="edu-school">Humber College, Toronto, Ontario</div>
+                </div>
+                <div class="education-item">
+                    <div class="edu-date">June 2024</div>
+                    <div class="edu-title">Computer Engineering, Bachelors</div>
+                    <div class="edu-school">Neotech Institute of Technology, Gujarat, India</div>
+                </div>
+                <div class="education-item">
+                    <div class="edu-date">September 2020</div>
+                    <div class="edu-title">Computer Engineering, Diploma</div>
+                    <div class="edu-school">Neotech Institute of Technology, Gujarat, India</div>
+                </div>
+
+                <h2 style="margin-top:5rem; text-align:left;">Certificates & Recommendation Letter</h2>
+                <div class="certificates-display">
+                    <div class="cert-image">
+                        <iframe src="diploma_certificate.pdf" style="height:900px;"></iframe>
+                        <p>Diploma in Computer Engineering</p>
+                    </div>
+                    <div class="cert-image">
+                        <iframe src="bachelor_certificate.pdf" style="height:900px;"></iframe>
+                        <p>Bachelor of Computer Engineering (Provisional)</p>
+                    </div>
+                    <div class="cert-image">
+                        <img src="cloud_computing_certificate.jpg" alt="Cloud Computing Certificate">
+                        <p>Cloud Computing Postgraduate Certificate - Dean's Honour Roll</p>
+                    </div>
+                    <div class="cert-image">
+                        <iframe src="recommendation_letter.pdf" style="height:900px;"></iframe>
+                        <p>Letter of Recommendation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-info">
+                    <div class="contact-item">Email: <a href="mailto:101586057@georgebrown.ca">101586057@georgebrown.ca</a></div>
+                    <div class="contact-item">Phone: <a href="tel:+14168977663">+1 (416) 897-7663</a></div>
+                    <div class="contact-item">LinkedIn: <a href="https://linkedin.com/in/kesha-dharmesh-shah-9681aa353" target="_blank">Kesha Dharmesh Shah</a></div>
+                    <div class="contact-item">GitHub: <a href="https://github.com/kesha0501" target="_blank">github.com/kesha0501</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Kesha Dharmesh Shah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
